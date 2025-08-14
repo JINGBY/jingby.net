@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@theme {
+	--font-sans: "PP Neue Montreal", sans-serif;
+    --font-mono: "Geist Mono", monospace;
+
+    --color-neutral-900: oklch(0.9011 0.0017 67.8); /* bg, text on dark bg */
+    --color-neutral-800: oklch(0.8674 0.0018 67.8);
+    --color-neutral-750: oklch(0.8419 0.0018 67.8);
+    --color-neutral-700: oklch(0.7006 0.0027 48.7); /* lighter text */
+    --color-neutral-600: red;
+    --color-neutral-500: red;
+    --color-neutral-400: oklch(0.2897 0.0023 67.73);
+    --color-neutral-300: red;
+    --color-neutral-200: oklch(0.2272 0.0025 67.7); /* text */
+    --color-neutral-100: oklch(0.1149 0 0); /* dark bg */
+
+    --color-primary: oklch(0.7683 0.0331 179.16);
+    --color-secondary: oklch(0.5038 0.0351 190.95);
+
+    --color-instagram: rgba(228, 22, 159, 0.2);
+    --color-spotify: rgba(40, 199, 19, 0.2);
+    --color-youtube: rgba(228, 22, 22, 0.2);
+    --color-apple-music: rgba(83, 83, 83, 0.2);
+    --color-beatport: rgba(41, 223, 153, 0.2);
+    --color-x: rgba(39, 79, 117, 0.2);
+
+
+    --text-xl: 25.6px;
+    --text-lg: 21px;
+    --text-base: 16px;
+    --text-sm: 14px;
+    --text-xs: 12px;
+
+    --default-transition-duration: 200ms;
+
+    --shadow-xl: 0px 12px 64px 0 rgba(0, 0, 0, 0.12);
+    --shadow-lg: 0px 12px 32px 0 rgba(0, 0, 0, 0.25);
+    --shadow-sm: 0px 12px 32px 0 rgba(0, 0, 0, 0.06);
+
+    --breakpoint-md: 1000px;
+    --breakpoint-lg: 1300px;
+}
+
+body {
+	@apply overflow-x-hidden font-sans text-base font-medium bg-neutral-900 text-neutral-200 selection:text-neutral-900 selection:bg-neutral-100 antialiased;
+}
+
+img {
+    @apply select-none;
+}
+
+h1 {
+    @apply text-xl my-5;
+}
+
+h2 {
+    @apply text-lg my-2;
+}
