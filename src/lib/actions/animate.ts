@@ -1,5 +1,5 @@
-import { gsap } from 'gsap';
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { gsap } from 'gsap/dist/gsap';
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 // register only on client (no-op if already registered)
 if (typeof window !== "undefined") {
